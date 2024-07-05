@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+	<!-- An other example of theme -->
+	<!-- <link rel="stylesheet" href="dist/theme/sky.css"> -->
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<style>
+				.make-it-pop {
+					filter: drop-shadow(0 0 10px purple);
+				}
+			</style>
+			<section data-state="make-it-pop">
+				Slide 1
+				<a href="#/login">Click to learn more</a>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+				  ## Slide 2
+				  A paragraph with some text and a [link](https://hakim.se).
+				  ---
+				  ## Slide 3
+				  ---
+				  ## Slide 4
+				</textarea>
+			</section>
+			<section data-background-color="aquamarine">
+				<h2>🍦</h2>
+			</section>
+			<section data-background-color="rgb(70, 70, 255)">
+				<h2>🍰</h2>
+			</section>
+			<section data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
+				<h2>🐟</h2>
+			</section>
+			<section data-background-gradient="radial-gradient(#283b95, #17b2c3)">
+				<h2>🐳</h2>
+			</section>
+			<section>
+				<section data-background-image="/images/sfondo.jpg">
+					<h2>Image</h2>
+				</section>
+				<section data-background-iframe="https://sicily-project.vercel.app" data-background-interactive>
+					<h2>Iframe</h2>
+				</section>
+			</section>
+			<section>
+				<h2>Code step by step</h2>
+				<pre><code data-line-numbers="3|8-10">
+					<table>
+						<tr>
+							<td>Apples</td>
+							<td>$1</td>
+							<td>7</td>
+						</tr>
+						<tr>
+							<td>Oranges</td>
+							<td>$2</td>
+							<td>18</td>
+						</tr>
+					</table>
+				</code></pre>
+			</section>
+			<section>
+				<h2>Fragments</h2>
+				<p class="fragment">Fade in</p>
+				<p class="fragment fade-out">Fade out</p>
+				<p class="fragment highlight-red">Highlight red</p>
+				<p class="fragment fade-in-then-out">Fade in, then out</p>
+				<p class="fragment fade-up">Slide up while fading in</p>
+			</section>
+			<!-- Custom Fragments -->
+			<style>
+				.fragment.blur {
+					filter: blur(5px);
+				}
+
+				.fragment.blur.visible {
+					filter: none;
+				}
+			</style>
+			<section>
+				<p class="fragment custom blur">One</p>
+				<p class="fragment custom blur">Two</p>
+				<p class="fragment custom blur">Three</p>
+			</section>
+			<section id="login">
+				<h2>Link - Go to start</h2>
+				<a href="#/0">Back to the first slide</a>
+			</section>
+			<section>
+				<div class="r-stack">
+					<img class="fragment fade-out" data-fragment-index="0" src="https://picsum.photos/450/300"
+						width="450" height="300" />
+					<img class="fragment current-visible" data-fragment-index="0" src="https://picsum.photos/300/450"
+						width="300" height="450" />
+					<img class="fragment" src="https://picsum.photos/400/400" width="400" height="400" />
+				</div>
+			</section>
+			<section>
+				<h2 class="r-fit-text">BIG by fitty ❤️</h2>
+			</section>
+			<!-- Layout Visibility -->
+			<section>Slide1</section>
+			<section data-visibility="hidden">Slide2</section>
+			<section>Slide3</section>
+			<section>Info1</section>
+			<section>Info2</section>
+			<section data-visibility="uncounted">Info3 Fine (non conteggiata)</section>
+			<!-- Transitions -->
+			<section data-transition="zoom">
+				<h2>This slide will override the presentation transition and zoom!</h2>
+			</section>
+			<section data-transition-speed="fast">
+				<h2>Choose from three transition speeds: default, fast or slow!</h2>
+			</section>
+			<section data-transition="convex" data-background-color="hotpink">
+				<h2>Blog</h2>
+				<p>Convex Transition</p>
+			</section>
+			<!-- Auto Animate -->
+			<section data-auto-animate>
+				<h1>Auto-Animate</h1>
+			</section>
+			<section data-auto-animate>
+				<h1 style="margin-top: 100px; color: red;">Auto-Animate</h1>
+			</section>
+			<section data-auto-animate>
+				<h1>Implicit</h1>
+			</section>
+			<section data-auto-animate>
+				<h1>Implicit</h1>
+				<h1>Animation</h1>
+			</section>
+			<section data-auto-animate>
+				<div data-id="box" style="height: 50px; background: salmon;"></div>
+			</section>
+			<section data-auto-animate>
+				<div data-id="box" style="height: 200px; background: blue;"></div>
+			</section>
+			<section data-auto-animate>
+				<h1>Group A</h1>
+			</section>
+			<section data-auto-animate>
+				<h1 style="color: #3B82F6;">Group A</h1>
+			</section>
+			<section data-auto-animate data-auto-animate-id="two">
+				<h1>Group B</h1>
+			</section>
+			<section data-auto-animate data-auto-animate-id="two">
+				<h1 style="color: #10B981;">Group B</h1>
+			</section>
+			<section data-auto-animate data-auto-animate-id="two" data-auto-animate-restart>
+				<h1>Group C</h1>
+			</section>
+			<section data-auto-animate data-auto-animate-id="two">
+				<h1 style="color: #EC4899;">Group C</h1>
+			</section>
+			<section data-autoslide="2000">
+				<p>After 2 seconds the first fragment will be shown.</p>
+				<p class="fragment" data-autoslide="10000">
+					After 10 seconds the next fragment will be shown.
+				</p>
+				<p class="fragment">
+					Now, the fragment is displayed for 2 seconds before the next slide is shown.
+				</p>
+			</section>
+			<section>
+				<p data-prevent-swipe>Can't change slides by swiping across this element.</p>
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	</script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			slideNumber: 'c/t',
+
+			// // Activate the scroll view
+			// view: 'scroll',
+
+			// // - auto:     Show the scrollbar while scrolling, hide while idle
+			// // - true:     Always show the scrollbar
+			// // - false:    Never show the scrollbar
+			// // Force the scrollbar to remain visible
+			// scrollProgress: true,
+			// scrollLayout: 'compact',
+
+			// Jump to Slide
+			// Press G to activate
+			// Type a slide number or id
+			// Press Enter to confirm
+			// Disable Jump to Slide
+			// jumpToSlide: false,
+
+			// touch: false,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+		// // Slide every five seconds
+		// Reveal.initialize({
+		// 	autoSlide: 5000,
+		// 	loop: true,
+		// });
+
+		// Test
+		Reveal.on('make-it-pop', () => {
+			console.log('✨');
+		});
+
+		Reveal.configure({
+			autoSlideMethod: () => Reveal.right(),
+		});
+
+		// // Activate the overview mode
+		// Reveal.toggleOverview(true);
+		// Deactivate the overview mode
+		Reveal.toggleOverview(false);
+	</script>
+</body>
+
+</html>
